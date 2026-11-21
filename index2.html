@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: justify;
+            max-width: 767px;
+            line-height: 1.5;
+            margin-right: 100px;
+        }
+
+        .container{
+            @media (max-width: 767px) {
+                width: 100%;
+                max-width: 100%;
+                padding-left: 16px;
+                padding-right: 16px;
+                box-sizing: border-box
+            }
+        }
+
+        .header{
+            line-height: 1.3;
+            font-family: 'plus jakarta sans';
+            font-weight: 700px;
+        }
+
+        .img{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <container>
+        <div class="header"><h1 style="color: #3b4d3B;">
+            Pendaftaran Brimob 26/27
+        </h1></div>
+        <div class="img">
+        <img src="Lambang_Korps_Brimob.svg" alt="brimob", height="auto" width="143px"></div>
+        <hr style="border-color: #3b4d3B">
+
+        <div class="header"><h2 style="color: #3b4d3B;">
+            Kepada Calon Brimob
+        </h2>
+        </div>
+        <p> Salam brigade calon Brimob kami satuan angkatan Keamanan negara 
+            akan mengadakan pendaftaran calon anggota brimob yang akan di selenggarakan
+            pada Hari, Tanggal, Bulan dan tahun yaitu Sabtu, November 21, 2026 diharapkan 
+            kepada calon untuk melakukan administrasi terlebih dahulu pada tanggal 15 bulan 
+            November, 2026 TANPA DIPUNGUT BIAYA adapun beberapa syarat yang perlu di setujui 
+            seperti surat dan kesiapan calon brimob untuk mengikuti seleksi anggota brimob,
+            Seperti hal nya pada undang-undang nomor 2 tahun 2002 pasal 21. <br>mengatur proses
+            rekrutmen calon anggota melalui jalur umum, proaktif, serta kompetensi khusus dengan prinsip
+            BETAH (Bersih, Transparan, Akuntabel, dan Humanis) melalui tahapan pendaftaran digital
+            pemeriksaan administrasi, kesehatan, psikologi, mental, kepribadian, akademik dan jasmani. </br>
+        </p>
+
+        <div class="header">
+            <h2 style="color: #3b4d3B;">Adapun Formulir yang perlu di isi dalam pendaftaran digital</h2>
+        </div>
+        <form action="#">
+            <label for="nama">Nama lengkap</label><br>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required><br><br>
+            <label for="date">Bulan, Tahun, Tanggal, lahir</label><br>
+            <input type="date" id="date" name="date" placeholder="Masukkan tahun kelahiran mu"><br><br>
+            <label for="jalur">Jalur seleksi</label><br>
+            <select id="jalur" name="jalur">
+                <option value="umum">Penerimaan umum</option>
+                <option value="proaktif">Penerimaan proaktif</option>
+                <option value="Khusus">Kompetensi khusus</option>
+            <label>Masukkan Gender:</label><br>
+            <input type="radio" id="pria" name="gender" value="pria">
+            <label for="pria">pria</label>
+            <input type="radio" id="wanita" name="gender" value="wanita">
+            <label for="wanita">wanita</label>
+            <button type="submit">Kirim Formulir</button>
+
+
+            
+        </form>
+
+    </container>
+</body>
+</html>
